@@ -11,19 +11,19 @@ function draw(){
     background("white");
 
     if(keyDown(LEFT_ARROW)){
-        changePosition(-1,0);
+        alteraPosicao(-1,0);
     } else if(keyDown(RIGHT_ARROW)){
-        changePosition(1,0);
+        alteraPosicao(1,0);
     } else if(keyDown(UP_ARROW)){
-        changePosition(0,-1);
+        alteraPosicao(0,-1);
     } else if(keyDown(DOWN_ARROW)){
-        changePosition(0,+1);
+        alteraPosicao(0,+1);
     }
 
     drawSprites();
 }
 
-function changePosition(x,y){
+function alteraPosicao(x,y){
     bola.x = bola.x + x;
     bola.y = bola.y + y;
 }
